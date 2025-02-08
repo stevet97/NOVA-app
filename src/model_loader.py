@@ -2,11 +2,11 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # Define the model path
-MODEL_PATH = "model"  # Adjust if using Hugging Face Hub or cloud storage
+MODEL_PATH = "StevesInfinityDrive/Nova-fine-tuning"  # Adjust if using Hugging Face Hub or cloud storage
 
 def load_model():
     """Load the fine-tuned GPT model and tokenizer."""
-    print("Loading model and tokenizer...")
+    print("Loading model and tokenizer from Hugging Face...")
 
     # Load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
